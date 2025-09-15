@@ -3,6 +3,8 @@
 
 flag = True
 
+# Lógica para mantener el juego mientras el usuario no presione 3,
+# controlado por la variable flag.
 while flag:
     print("Bienvenido al juego para adivinar un numero binario o decimal!")
     option = int(input("""
