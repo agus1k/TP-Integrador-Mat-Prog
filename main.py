@@ -1,13 +1,21 @@
 # Juego de Adivinanza en Binario:
 # Muestren un número en binario y desafíen al usuario a adivinar su equivalente decimal, o viceversa, reforzando la conversión entre ambos sistemas.
 
-print("Bienvenido al juego para adivinar un numero binario o decimal!")
-print("""
-    Elija su opción:
-    1. Adivinar número binario
-    2. Adivinar número decimal
-    3. Salir
-""")
+flag = True
+
+# Lógica para mantener el juego mientras el usuario no presione 3,
+# controlado por la variable flag.
+while flag:
+    print("Bienvenido al juego para adivinar un numero binario o decimal!")
+    option = int(input("""
+        Elija su opción:
+        1. Adivinar número binario
+        2. Adivinar número decimal
+        3. Salir
+    """))
+
+    if option == 3: 
+        flag = False
 
 # binario = ""
 
